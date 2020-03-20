@@ -12,9 +12,9 @@
     "webpack-dev-server": "3.9.0",
     "webpack-babel-multi-target-plugin": "2.3.3",
     "copy-webpack-plugin": "5.1.0",
+    "compression-webpack-plugin": "3.0.1",
     "webpack-merge": "4.2.2",
-    "raw-loader": "3.0.0",
-    "compression-webpack-plugin": "3.0.1"
+    "raw-loader": "3.0.0"
   },
   "vaadinAppPackageHash": "4309c0e27637e719f72f1e22b94ec3664c19bd42a3be5e825ebc5774a0d43a78"
 }

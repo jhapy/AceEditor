@@ -1,6 +1,5 @@
 package io.github.ciesielskis;
 
-import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 
@@ -10,7 +9,7 @@ public class View extends Div {
     public View() {
         AceEditor aceEditor = new AceEditor();
 
-        aceEditor.setTheme(AceTheme.eclipse);
+        aceEditor.setTheme(AceTheme.monokai);
         aceEditor.setMode(AceMode.xml);
         aceEditor.setFontSize(14);
         aceEditor.setSoftTabs(false);

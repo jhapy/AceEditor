@@ -24,6 +24,8 @@ import 'ace-builds/src-noconflict/ace.js';
 import 'ace-builds/src-noconflict/ext-language_tools.js';
 import 'ace-builds/src-noconflict/snippets/snippets.js';
 
+const CDN = 'https://cdn.jsdelivr.net/npm/ace-builds@1.4.8/src-min-noconflict';
+
 
 var editorFocus = function() { 
   var _self = this;
@@ -92,7 +94,7 @@ class AceWidget extends PolymerElement {
       },
       fontSize: {
         type: String,
-        value: '14px',
+//        value: '14px',
         observer: 'fontSizeChanged',
       },
       tabSize: {
@@ -180,12 +182,12 @@ class AceWidget extends PolymerElement {
 
     this.injectStyle('#ace_editor\\.css');
 
-    let baseUrl = this.baseUrl || `${this.importPath}../../ace-builds/src-min-noconflict/`
+    //let baseUrl = this.baseUrl || `${this.importPath}../../ace-builds/src-min-noconflict/`
 
-    ace.config.set('basePath', baseUrl);
-    ace.config.set('modePath', baseUrl);
-    ace.config.set('themePath', baseUrl);
-    ace.config.set('workerPath', baseUrl);
+    ace.config.set('basePath', CDN);
+    ace.config.set('modePath', CDN);
+    ace.config.set('themePath', CDN);
+    ace.config.set('workerPath', CDN);
 
     this.themeChanged();
     this.editorValue = '';
