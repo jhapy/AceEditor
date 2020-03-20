@@ -3,7 +3,7 @@
 
     <groupId>io.github.ciesielskis</groupId>
     <artifactId>ace-editor</artifactId>
-    <version>1.0-Beta</version>
+    <version>1.0.2-Beta</version>
     <name>Ace Editor</name>
     <description>Integration of paper-slider for Vaadin platform</description>
 
