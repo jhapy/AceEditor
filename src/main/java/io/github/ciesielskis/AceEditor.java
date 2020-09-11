@@ -8,7 +8,7 @@ import com.vaadin.flow.shared.Registration;
 
 @Tag("ace-widget")
 @SuppressWarnings("serial")
-@NpmPackage(value="ace-builds", version="1.4.8")
+@NpmPackage(value="ace-builds", version="1.4.12")
 @JsModule("./@granite-elements/ace-widget/ace-widget.js")
 @CssImport(value = "./styles/styles.css")
 public class AceEditor extends AbstractSinglePropertyField<AceEditor, String> implements HasSize, HasStyle, Focusable<AceEditor> {

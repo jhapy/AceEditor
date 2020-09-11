@@ -27,7 +27,7 @@ import 'ace-builds/src-noconflict/snippets/snippets.js';
 const CDN = 'https://cdn.jsdelivr.net/npm/ace-builds@1.4.8/src-min-noconflict';
 
 
-var editorFocus = function() { 
+var editorFocus = function() {
   var _self = this;
   setTimeout(function() {
       if (!_self.isFocused())
@@ -43,11 +43,6 @@ class AceWidget extends PolymerElement {
   static get template() {
     return html`
       <style>
-        :host {
-          display: block;
-          width: 100%;
-        }
-    
         #editor {
           border: 1px solid #e3e3e3;
           border-radius: 4px;
@@ -151,7 +146,7 @@ class AceWidget extends PolymerElement {
     let baseUrl = this.baseUrl || `${this.importPath}../../ace-builds/src-min-noconflict/`
 
     // In non-minified mode, imports are parallelized, and sometimes `ext-language_tools.js` and
-    // `snippets.js` arrive before `ace.js` is ready. I am adding some tests here with dynamic imports 
+    // `snippets.js` arrive before `ace.js` is ready. I am adding some tests here with dynamic imports
     // to fix thaty
     if (!ace) {
       await import(`${baseUrl}ace.js`);
@@ -159,7 +154,7 @@ class AceWidget extends PolymerElement {
     if (!ace.require("ace/ext/language_tools")) {
       await import(`${baseUrl}ext-language_tools.js`);
     }
-    
+
     // console.debug("[ace-widget] connectedCallback")
     let div = this.$.editor;
     div.style.width = '100%';
